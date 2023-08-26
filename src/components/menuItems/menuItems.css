@@ -1,0 +1,11 @@
+.menu__content{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.dash__line{
+    width: 90px;
+    height: 1px;
+    background: var(--color-golden);
+    margin: 0 1rem;
+}

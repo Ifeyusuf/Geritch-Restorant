@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.container{
+    width: min(100% - 15px, 1200px);
+    margin-inline: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    display: flex;
+}
+.justify__between{
+    display: flex;
+    justify-content: space-between;
+}
+.justify__center{
+    display: flex;
+    justify-content: center;
+}
+.items__center{
+    display: flex;
+    align-items: center;
+}
+.font__family{
+    font-family: var(--font-base);
+}
+.gap__1{
+    gap:1rem ;
+}
+.cursor{
+    cursor: pointer;
+}
+.text__white{
+    color: var(--color-white);
+}
+.text__center{
+    align-items: center;
+}
+.font__27{
+    font-size: 27px;
+}
+.font__alt{
+    font-family: var(--font-alt);
+}
+.bg__dark{
+    background: var(--color-black);
+}
+.my__2{
+    margin: 2rem 0;
+}
+.py__2{
+    padding: 2rem 0;
+}
+.section__padding {
+    padding: 4rem 2.5rem;
   }
+.app__bg {
+    background: url('./assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.p__opensans {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform:capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+.p__cormorant {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 23px;
+}
+.headtext__cormorant {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 64px;
+    line-height: 83.2px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+.custom__button {
+    background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.spoon__img {
+    width: 45px;
+}
+.mobile__only{
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* =====  MOBILE RESPONSIVENESS ===== */
+
+@media only screen and (max-width:650px){
+    .pc__only-sm{
+        display: none;
+    }
+    .mobile__only-sm{
+        display: flex;
+    }
+    .columns__sm{
+        flex-direction: column;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width:1024px){
+    .pc__only-md{
+        display: none;
+    }
+    .mobile__only-md{
+        display: flex;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width:556px){
+    .special__today{
+        font-size: 50px ;
+    }
 }

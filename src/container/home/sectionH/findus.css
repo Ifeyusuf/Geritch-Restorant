@@ -1,0 +1,44 @@
+
+.findus__content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+.findus__heading h1{
+    margin-bottom: 3rem;
+}
+.findus__text p:nth-child(2){
+    margin: 2rem 0;
+    color: var(--color-golden);
+}
+.findus__image{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.findus__image img{
+    width: 100%;
+}
+.findus__btn{
+    margin-top: 2rem;
+}
+
+
+
+@media only screen and (max-width:650px){
+    .findus__image{
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .findus__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .findus__image{
+        margin-top: 4rem;
+    }
+}
